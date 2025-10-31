@@ -170,7 +170,7 @@ dotnet run
 | `Network-related error` | API não está rodando | Rode `dotnet run` na pasta `EstoqueApi` |
 | `CORS policy error` | API bloqueando requisições externas | Adicione `builder.Services.AddCors()` no `Program.cs` |
 
-###👨‍💻 Autor
+### 👨‍💻 Autor
 ```bash
 Desenvolvido por [Guizzin]
 💻 Projeto acadêmico — CRUD completo com C#, EF Core, SQLite e Frontend Web.
