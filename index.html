@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>📦 Sistema de Estoque</title>
+    <link rel="icon" type="image/png" href="meubenzinholinda.png">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>📦 Sistema de Estoque</h1>
+    </header>
+
+    <main>
+        <section id="add-section">
+            <h2>Adicionar Produto</h2>
+            <div class="form-group">
+                <input type="text" id="name" placeholder="Nome do Produto" />
+                <input type="text" id="price" placeholder="Preço (R$)" />
+
+                <select id="category">
+                    <option value="">Selecione uma Categoria</option>
+                    <option value="ELETRÔNICOS">ELETRÔNICOS</option>
+                    <option value="PERIFÉRICOS">PERIFÉRICOS</option>
+                    <option value="MÓVEIS">MÓVEIS</option>
+                    <option value="ROUPAS">ROUPAS</option>
+                    <option value="ALIMENTOS">ALIMENTOS</option>
+                    <option value="OUTROS">OUTROS</option>
+                </select>
+
+                <button id="add-btn" onclick="addProduct()">Adicionar</button>
+            </div>
+        </section>
+
+        <section id="list-section">
+            <h2>Lista de Produtos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Preço</th>
+                        <th>Categoria</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="products">
+                    <tr>
+                        <td colspan="5" style="text-align:center;">Carregando...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por <b>Guizzin</b> — API ASP.NET + Front JS</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
